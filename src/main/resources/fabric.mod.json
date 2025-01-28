@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "lithonate",
+  "version": "${version}",
+  "name": "Lithonate",
+  "description": "Tweaks to update your suppression.",
+  "authors": [
+    "Pairman"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Pairman/Lithonate",
+    "issues": "https://github.com/Pairman/Lithonate/issues",
+    "sources": "https://github.com/Pairman/Lithonate"
+  },
+  "license": "GPLv3",
+  "icon": "assets/lithonate/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.eu.pnxlr.lithonate.Lithonate"
+    ],
+    "modmenu": [
+      "org.eu.pnxlr.lithonate.config.modmenu.LithonateModMenuEntry"
+    ]
+  },
+  "mixins": [
+    "lithonate.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric-key-binding-api-v1": "*"
+  },
+  "recommends": {
+    "modmenu": ">=1.15.0",
+    "minecraft": ">=1.16.5"
+  }
+}

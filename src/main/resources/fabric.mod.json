@@ -20,7 +20,7 @@
       "org.eu.pnxlr.lithonate.Lithonate"
     ],
     "modmenu": [
-      "org.eu.pnxlr.lithonate.config.modmenu.LithonateModMenuEntry"
+      "org.eu.pnxlr.lithonate.compat.modmenu.LithonateModMenuEntry"
     ]
   },
   "mixins": [

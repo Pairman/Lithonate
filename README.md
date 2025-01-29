@@ -2,6 +2,10 @@
 
 Tweaks to update your suppression.
 
+## Requirements
+
+- [maruohon/malilib](https://github.com/maruohon/malilib)
+
 ## Tweaks
 
 ### Transparent Block Clicks

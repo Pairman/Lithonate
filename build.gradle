@@ -16,10 +16,11 @@ repositories {
         url "https://masa.dy.fi/maven"
     }
     maven {
-        name "TerraformersMC"
         url "https://maven.terraformersmc.com/releases/"
     }
-
+    maven {
+        url "https://jitpack.io"
+    }
 }
 
 dependencies {
@@ -34,9 +35,8 @@ dependencies {
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
-    modImplementation "dev.lambdaurora:spruceui:${project.spruceui_version}"
-    include "dev.lambdaurora:spruceui:${project.spruceui_version}"
-    // modImplementation "fi.dy.masa.malilib:malilib-fabric-${project.minecraft_version}:${project.malilib_version}"
+    modImplementation "fi.dy.masa.malilib:malilib-fabric-${project.minecraft_version}:${project.malilib_version}"
+	include(modImplementation("com.github.Fallen-Breath:conditional-mixin:${project.conditionalmixin_version}"))
 }
 
 processResources {

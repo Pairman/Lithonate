@@ -5,6 +5,8 @@
   "name": "Lithonate",
   "description": "Tweaks to update your suppression.",
   "authors": [
+    "Fallen_Breath",
+    "Ivan1F",
     "Pairman"
   ],
   "contact": {
@@ -12,7 +14,7 @@
     "issues": "https://github.com/Pairman/Lithonate/issues",
     "sources": "https://github.com/Pairman/Lithonate"
   },
-  "license": "GPLv3",
+  "license": "LGPLv3",
   "icon": "assets/lithonate/icon.png",
   "environment": "client",
   "entrypoints": {
@@ -20,7 +22,7 @@
       "org.eu.pnxlr.lithonate.Lithonate"
     ],
     "modmenu": [
-      "org.eu.pnxlr.lithonate.compat.modmenu.LithonateModMenuEntry"
+      "org.eu.pnxlr.lithonate.compat.modmenu.ModMenuApiImpl"
     ]
   },
   "mixins": [
@@ -32,6 +34,7 @@
   },
   "recommends": {
     "modmenu": ">=1.15.0",
-    "minecraft": ">=1.16.5"
+    "minecraft": ">=1.16.5",
+    "malilib": "*"
   }
 }

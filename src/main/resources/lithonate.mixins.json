@@ -2,12 +2,21 @@
   "required": true,
   "minVersion": "0.8",
   "package": "org.eu.pnxlr.lithonate.mixins",
+  "plugin": "org.eu.pnxlr.lithonate.util.mixin.LithonateMixinConfigPlugin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-
+    "core.gui.ConfigBaseMixin",
+    "core.gui.KeybindMultiAccessor",
+    "core.gui.WidgetDropDownListMixin",
+    "core.gui.WidgetLabelMixin",
+    "core.gui.WidgetListBaseMixin",
+    "core.gui.WidgetListConfigOptionMixin",
+    "core.gui.WidgetListConfigOptionsAccessor",
+    "core.gui.WidgetListConfigOptionsMixin",
+    "core.gui.WidgetSearchBarAccessor",
+    "tweaks.transparentBlockClicks.ClientPlayerInteractionManagerMixin"
   ],
   "client": [
-    "ClientPlayerInteractionManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

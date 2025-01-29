@@ -1,9 +1,61 @@
 {
-  "config.lithonate.title": "Lithonate Config",
-  "config.lithonate.enabled": "Enabled",
-  "config.lithonate.enabled.tooltip": "Enables this mod.",
-  "config.lithonate.transparent_clicks": "Transparent Block Clicks",
-  "config.lithonate.transparent_clicks.tooltip": "If enabled, rails, redstone dusts and carpets will be transparent from clicks. Pressing shift will temporarily disable this functionality.",
-  "config.lithonate.transparent_clicks_banner_sign": "Transparent Block Clicks for Banners & Signs",
-  "config.lithonate.transparent_clicks_banner_sign.tooltip": "If enabled along with \"Transparent Block Clicks\", banners and signs will also be transparent from clicks."
+  "// Features": "================================================",
+
+  "lithonate.config.tweakTransparentBlockClicks": "transparentBlockClicks",
+  "lithonate.config.tweakTransparentBlockClicks.comment": "Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.",
+  "lithonate.config.tweakTransparentBlockClicks.pretty_name": "Transparent Block Clicks",
+  "lithonate.config.tweakTransparentBlockClicksBannerSign": "transparentBlockClicksBannerSign",
+  "lithonate.config.tweakTransparentBlockClicksBannerSign.comment": "Make banners and signs also transparent from clicks.",
+  "lithonate.config.tweakTransparentBlockClicksBannerSign.pretty_name": "Transparent Block Clicks for Banners & Signs",
+
+  "// Settings": "================================================",
+
+  "lithonate.config.settingEnable": "enable",
+  "lithonate.config.settingEnable.comment": "Enable this mod.",
+
+  "lithonate.config.settingOpenConfigGui": "openConfigGui",
+  "lithonate.config.settingOpenConfigGui.comment": "Open the config GUI of Lithonate",
+
+  "lithonate.config.settingDebugMode": "debugMode",
+  "lithonate.config.settingDebugMode.comment": "Open the config GUI of Lithonate",
+
+  "// GUI and Misc": "================================================",
+
+  "lithonate.hotkeys.category.main": "Lithonate",
+  "lithonate.gui.title": "Lithonate v%1$s Config GUI",
+  "lithonate.gui.selector_drop_down_list.all": "All",
+  "lithonate.gui.trigger_button.text": "Trigger",
+  "lithonate.gui.trigger_button.hover": "Click to trigger %1$s once\n§7§oThis will simulate hotkey pressed and released in order§r",
+
+  "lithonate.gui.config_category.all": "All",
+  "lithonate.gui.config_category.all.description": "All options provided by Lithonate",
+  "lithonate.gui.config_category.features": "Features",
+  "lithonate.gui.config_category.features.description": "New features provided by Lihonate",
+  "lithonate.gui.config_category.settings": "Settings",
+  "lithonate.gui.config_category.settings.description": "Settings of Lithonate itself",
+
+  "lithonate.gui.config_type.label_text": "Type filter",
+  "lithonate.gui.config_type.generic": "Generic",
+  "lithonate.gui.config_type.hotkey": "Hotkey",
+  "lithonate.gui.config_type.list": "List",
+  "lithonate.gui.config_type.tweak": "Tweak",
+  "lithonate.gui.config_type.disable": "Disable",
+  "lithonate.gui.config_type.config": "Config",
+  "lithonate.gui.mod_relation_footer.or": "or",
+  "lithonate.gui.mod_relation_footer.requirement": "Required mods:",
+  "lithonate.gui.mod_relation_footer.confliction": "Conflicted mods:",
+  "lithonate.util.mod.easiercrafting": "EasierCrafting",
+  "lithonate.util.mod.fabric": "Fabric API",
+  "lithonate.util.mod.fabricloader": "Fabric Loader",
+  "lithonate.util.mod.iris": "Iris",
+  "lithonate.util.mod.itemscroller": "Item Scroller",
+  "lithonate.util.mod.litematica": "Litematica",
+  "lithonate.util.mod.minecraft": "Minecraft",
+  "lithonate.util.mod.optifabric": "Optifine",
+  "lithonate.util.mod.raise-chat-limit": "Raise Chat Limit",
+  "lithonate.util.mod.replaymod": "Replay mod",
+  "lithonate.util.mod.tweakeroo": "Tweakeroo",
+  "lithonate.util.mod.xaeroworldmap": "Xaero's World Map",
+  "lithonate.util.mod.xaerominimap": "Xaero's Minimap"
+
 }

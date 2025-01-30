@@ -14,7 +14,9 @@
     "core.gui.WidgetListConfigOptionsAccessor",
     "core.gui.WidgetListConfigOptionsMixin",
     "core.gui.WidgetSearchBarAccessor",
-    "tweaks.transparentBlockClicks.ClientPlayerInteractionManagerMixin"
+    "tweaks.transparentBlockClicks.ClientPlayerInteractionManagerMixin",
+    "yeets.noClickingNetherPortalSides.ClientPlayerInteractionManagerMixin",
+    "yeets.noClickingWitherRoses.ClientPlayerInteractionManagerMixin"
   ],
   "client": [
   ],

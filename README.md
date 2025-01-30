@@ -6,15 +6,27 @@ Tweaks to update your suppression.
 
 - [maruohon/malilib](https://github.com/maruohon/malilib)
 
-## Tweaks
+## Functionalities
 
-### Transparent Block Clicks
+### Features
+
+#### Transparent Block Clicks
 
 Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.
 
-### Transparent Block Clicks for Banners & Signs
+#### Transparent Block Clicks for Banners & Signs
 
-Make banners and signs also transparent from clicks.
+Make banners, signs also transparent from clicks.
+
+### Disables
+
+#### No Clicking Nether Portal Sides
+
+Prevent directly right-clicking on the sides of nether portal blocks.
+
+#### No Clicking Wither Roses
+
+Prevent directly left-/right-clicking on wither roses.
 
 ## Credits
 

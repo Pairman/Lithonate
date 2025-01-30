@@ -37,7 +37,7 @@ public @interface Config {
     }
 
     enum Category {
-        ALL, FEATURES, SETTINGS;
+        ALL, FEATURES, DISABLES, SETTINGS;
 
         public String getDisplayName() {
             return StringUtils.translate("lithonate.gui.config_category." + this.name().toLowerCase());

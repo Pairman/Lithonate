@@ -14,6 +14,8 @@ import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import org.eu.pnxlr.lithonate.config.LithonateConfigs;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -38,14 +40,20 @@ public class ClientPlayerInteractionManagerMixin {
             !LithonateConfigs.TWEAK_TRANSPARENT_BLOCK_CLICKS.getBooleanValue() ||
             Screen.hasShiftDown())
             return hitResult;
-        BlockPos pos = hitResult.getBlockPos();
-        Block block = this.client.world.getBlockState(pos).getBlock();
+        BlockPos blockPos = hitResult.getBlockPos();
+        Block block = this.client.world.getBlockState(blockPos).getBlock();
         if (block instanceof AbstractRailBlock || block instanceof RedstoneWireBlock || block instanceof CarpetBlock ||
             (LithonateConfigs.TWEAK_TRANSPARENT_BLOCK_CLICKS_BANNER_SIGN.getBooleanValue() &&
                 (block instanceof AbstractSignBlock || block instanceof AbstractBannerBlock))) {
-            Direction targetSide = hitResult.getSide().getOpposite();
-            BlockPos targetPos = pos.offset(targetSide);
-            return new BlockHitResult(hitResult.getPos(), targetSide, targetPos, false);
+            Vec3d pos = hitResult.getPos();
+            Vec3d ray = this.client.player.getRotationVec(1.0F);
+            double dx = (MathHelper.floor(pos.x) - pos.x + (ray.x > 0 ? 1 : 0)) / ray.x;
+            double dy = (MathHelper.floor(pos.y) - pos.y + (ray.y > 0 ? 1 : 0)) / ray.y;
+            double dz = (MathHelper.floor(pos.z) - pos.z + (ray.z > 0 ? 1 : 0)) / ray.z;
+            Vec3d targetPos = pos.add(ray.multiply(Math.min(dy, Math.min(dx, dz)) + 0.025));
+            BlockPos targetBlockPos = new BlockPos(targetPos);
+            Direction targetSide = Direction.getFacing(targetPos.x, targetPos.y, targetPos.z);
+            return new BlockHitResult(pos, targetSide, targetBlockPos, false);
         }
         return hitResult;
     }

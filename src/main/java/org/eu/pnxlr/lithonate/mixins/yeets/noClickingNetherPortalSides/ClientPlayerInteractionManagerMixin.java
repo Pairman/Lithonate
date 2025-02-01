@@ -41,8 +41,8 @@ public class ClientPlayerInteractionManagerMixin {
             !LithonateConfigs.YEET_NO_CLICKING_NETHER_PORTAL_SIDES.getBooleanValue() ||
             Screen.hasShiftDown())
             return;
-        BlockPos pos = hitResult.getBlockPos();
-        BlockState blockState = this.client.world.getBlockState(pos);
+        BlockPos blockPos = hitResult.getBlockPos();
+        BlockState blockState = this.client.world.getBlockState(blockPos);
         if (blockState.getBlock() instanceof NetherPortalBlock) {
             Direction.Axis axis = blockState.get(NetherPortalBlock.AXIS);
             Direction.Axis targetAxis = hitResult.getSide().getAxis();

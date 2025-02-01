@@ -32,7 +32,6 @@ public class LithonateMixinConfigPlugin extends RestrictiveMixinConfigPlugin {
 
     @Override
     public List<String> getMixins() {
-
         return null;
     }
 

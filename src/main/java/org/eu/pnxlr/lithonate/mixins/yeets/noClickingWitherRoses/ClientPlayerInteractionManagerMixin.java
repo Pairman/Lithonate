@@ -35,12 +35,13 @@ public class ClientPlayerInteractionManagerMixin {
         method = "attackBlock(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Direction;)Z",
         at = @At("HEAD"), cancellable = true
     )
-    private void onAttackBlock(BlockPos pos, Direction direction, CallbackInfoReturnable<Boolean> cir) {
+    private void onAttackBlock(BlockPos blockPos, Direction direction,
+            CallbackInfoReturnable<Boolean> cir) {
         if (!LithonateConfigs.SETTING_ENABLE.getBooleanValue() ||
             !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue() ||
             Screen.hasShiftDown())
             return;
-        Block block = this.client.world.getBlockState(pos).getBlock();
+        Block block = this.client.world.getBlockState(blockPos).getBlock();
         if (block instanceof WitherRoseBlock)
             cir.setReturnValue(false);
     }
@@ -55,8 +56,8 @@ public class ClientPlayerInteractionManagerMixin {
             !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue() ||
             Screen.hasShiftDown())
             return;
-        BlockPos pos = hitResult.getBlockPos();
-        Block block = this.client.world.getBlockState(pos).getBlock();
+        BlockPos blockPos = hitResult.getBlockPos();
+        Block block = this.client.world.getBlockState(blockPos).getBlock();
         if (block instanceof WitherRoseBlock)
             cir.setReturnValue(ActionResult.FAIL);
     }

@@ -5,7 +5,6 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
 import net.minecraft.block.WitherRoseBlock;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.client.world.ClientWorld;
@@ -38,8 +37,21 @@ public class ClientPlayerInteractionManagerMixin {
     private void onAttackBlock(BlockPos blockPos, Direction direction,
             CallbackInfoReturnable<Boolean> cir) {
         if (!LithonateConfigs.SETTING_ENABLE.getBooleanValue() ||
-            !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue() ||
-            Screen.hasShiftDown())
+            !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue())
+            return;
+        Block block = this.client.world.getBlockState(blockPos).getBlock();
+        if (block instanceof WitherRoseBlock)
+            cir.setReturnValue(false);
+    }
+
+    @Inject(
+        method = "updateBlockBreakingProgress(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Direction;)Z",
+        at = @At("HEAD"), cancellable = true
+    )
+    private void onUpdateBlockBreakingProgress(BlockPos blockPos, Direction direction,
+            CallbackInfoReturnable<Boolean> cir) {
+        if (!LithonateConfigs.SETTING_ENABLE.getBooleanValue() ||
+            !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue())
             return;
         Block block = this.client.world.getBlockState(blockPos).getBlock();
         if (block instanceof WitherRoseBlock)
@@ -53,8 +65,7 @@ public class ClientPlayerInteractionManagerMixin {
     private void onInteractBlock(ClientPlayerEntity player, ClientWorld world,
             Hand hand, BlockHitResult hitResult, CallbackInfoReturnable<ActionResult> cir) {
         if (!LithonateConfigs.SETTING_ENABLE.getBooleanValue() ||
-            !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue() ||
-            Screen.hasShiftDown())
+            !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue())
             return;
         BlockPos blockPos = hitResult.getBlockPos();
         Block block = this.client.world.getBlockState(blockPos).getBlock();

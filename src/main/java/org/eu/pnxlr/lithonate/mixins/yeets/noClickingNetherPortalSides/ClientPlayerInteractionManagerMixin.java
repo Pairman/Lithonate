@@ -5,7 +5,6 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.NetherPortalBlock;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.client.world.ClientWorld;
@@ -38,8 +37,7 @@ public class ClientPlayerInteractionManagerMixin {
     private void onInteractBlock(ClientPlayerEntity player, ClientWorld world,
             Hand hand, BlockHitResult hitResult, CallbackInfoReturnable<ActionResult> cir) {
         if (!LithonateConfigs.SETTING_ENABLE.getBooleanValue() ||
-            !LithonateConfigs.YEET_NO_CLICKING_NETHER_PORTAL_SIDES.getBooleanValue() ||
-            Screen.hasShiftDown())
+            !LithonateConfigs.YEET_NO_CLICKING_NETHER_PORTAL_SIDES.getBooleanValue())
             return;
         BlockPos blockPos = hitResult.getBlockPos();
         BlockState blockState = this.client.world.getBlockState(blockPos);

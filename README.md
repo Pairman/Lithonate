@@ -18,6 +18,10 @@ Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disab
 
 Make banners, signs also transparent from clicks.
 
+#### Transparent Wither Rose Hitboxes
+
+Make hitboxes of wither roses empty.
+
 ### Disables
 
 #### No Clicking Nether Portal Sides
@@ -27,6 +31,10 @@ Prevent directly right-clicking on the sides of nether portal blocks.
 #### No Clicking Wither Roses
 
 Prevent directly left-/right-clicking on wither roses.
+
+#### No Breaking Nether Bricks Under Wither Roses
+
+Prevent breaking nether bricks with wither roses on them.
 
 ## Credits
 

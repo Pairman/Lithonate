@@ -8,7 +8,15 @@
   "lithonate.config.tweakTransparentBlockClicksBannerSign.comment": "Make banners, signs also transparent from clicks.",
   "lithonate.config.tweakTransparentBlockClicksBannerSign.pretty_name": "Transparent Block Clicks for Banners & Signs",
 
+  "lithonate.config.tweakTransparentWitherRoseHitboxes": "transparentWitherRoseHitboxes",
+  "lithonate.config.tweakTransparentWitherRoseHitboxes.comment": "Make hitboxes of wither roses empty.",
+  "lithonate.config.tweakTransparentWitherRoseHitboxes.pretty_name": "Transparent Wither Rose Hitboxes",
+
   "// Disables": "================================================",
+
+  "lithonate.config.yeetNoBreakingNetherBricksUnderWitherRoses": "noBreakingNetherBricksUnderWitherRoses",
+  "lithonate.config.yeetNoBreakingNetherBricksUnderWitherRoses.comment": "Prevent breaking nether bricks with wither roses on them.",
+  "lithonate.config.yeetNoBreakingNetherBricksUnderWitherRoses.pretty_name": "No Breaking Nether Bricks Under Wither Roses",
 
   "lithonate.config.yeetNoClickingNetherPortalSides": "noClickingNetherPortalSides",
   "lithonate.config.yeetNoClickingNetherPortalSides.comment": "Prevent directly right-clicking on the sides of nether portal blocks.",

@@ -34,9 +34,15 @@ public class LithonateConfigs {
     @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
     public static final LithonateConfigBoolean TWEAK_TRANSPARENT_BLOCK_CLICKS_BANNER_SIGN = ConfigFactory.newConfigBoolean("tweakTransparentBlockClicksBannerSign", false);
 
+    @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
+    public static final LithonateConfigBoolean TWEAK_TRANSPARENT_WITHER_ROSE_HITBOXES = ConfigFactory.newConfigBoolean("tweakTransparentWitherRoseHitboxes", false);
+
     ////////////////////
     //    Disables    //
     ////////////////////
+
+    @Config(type = Config.Type.TWEAK, category = Config.Category.DISABLES)
+    public static final LithonateConfigBooleanHotkeyed YEET_NO_BREAKING_NETHER_BRICKS_UNDER_WITHER_ROSES = ConfigFactory.newConfigBooleanHotkeyed("yeetNoBreakingNetherBricksUnderWitherRoses", true, "");
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.DISABLES)
     public static final LithonateConfigBooleanHotkeyed YEET_NO_CLICKING_NETHER_PORTAL_SIDES = ConfigFactory.newConfigBooleanHotkeyed("yeetNoClickingNetherPortalSides", true, "");

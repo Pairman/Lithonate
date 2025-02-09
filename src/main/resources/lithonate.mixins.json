@@ -14,6 +14,7 @@
     "core.gui.WidgetListConfigOptionsAccessor",
     "core.gui.WidgetListConfigOptionsMixin",
     "core.gui.WidgetSearchBarAccessor",
+    "tweaks.biggerCocoaBlockHitboxes.CocoaBlockMixin",
     "tweaks.transparentBlockClicks.ClientPlayerInteractionManagerMixin",
     "tweaks.transparentWitherRoseHitboxes.WitherRoseBlockMixin",
     "yeets.noBreakingNetherBricksUnderWitherRoses.ClientPlayerInteractionManagerMixin",

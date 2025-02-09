@@ -10,6 +10,10 @@ Tweaks to update your suppression.
 
 ### Features
 
+#### Bigger Cocoa Block Hitboxes
+
+Make hitboxes of cocoa blocks full-cuboidal.
+
 #### Transparent Block Clicks
 
 Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.

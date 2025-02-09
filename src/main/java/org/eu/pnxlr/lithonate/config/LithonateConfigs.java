@@ -29,6 +29,9 @@ public class LithonateConfigs {
     ////////////////////
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
+    public static final LithonateConfigBooleanHotkeyed TWEAK_BIGGER_COCOA_BLOCK_HITBOXES = ConfigFactory.newConfigBooleanHotkeyed("tweakBiggerCocoaBlockHitboxes", true, "");
+
+    @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
     public static final LithonateConfigBooleanHotkeyed TWEAK_TRANSPARENT_BLOCK_CLICKS = ConfigFactory.newConfigBooleanHotkeyed("tweakTransparentBlockClicks", true, "");
 
     @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)

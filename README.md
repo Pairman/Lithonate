@@ -10,13 +10,13 @@ Tweaks to update your suppression.
 
 ### Features
 
-#### Bigger Cocoa Block Hitboxes
-
-Make hitboxes of cocoa blocks full-cuboidal.
-
 #### Bigger Banner & Sign Block Hitboxes
 
 Make hitboxes of banner, sign blocks full-cuboidal.
+
+#### Bigger Cocoa Block Hitboxes
+
+Make hitboxes of cocoa blocks full-cuboidal.
 
 #### Transparent Block Clicks
 

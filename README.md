@@ -14,6 +14,10 @@ Tweaks to update your suppression.
 
 Make hitboxes of cocoa blocks full-cuboidal.
 
+#### Bigger Banner & Sign Block Hitboxes
+
+Make hitboxes of banner, sign blocks full-cuboidal.
+
 #### Transparent Block Clicks
 
 Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.
@@ -27,6 +31,10 @@ Make banners, signs also transparent from clicks.
 Make hitboxes of wither roses empty.
 
 ### Disables
+
+#### No Block Interactions
+
+Disable all block interactions.
 
 #### No Clicking Nether Portal Sides
 

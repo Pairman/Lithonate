@@ -3,9 +3,8 @@ package org.eu.pnxlr.lithonate.util;
 import com.google.common.collect.ImmutableMap;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import fi.dy.masa.malilib.util.FileUtils;
 import fi.dy.masa.malilib.util.JsonUtils;
-import org.eu.pnxlr.lithonate.Lithonate;
+import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.File;
 import java.util.Map;
@@ -15,7 +14,7 @@ public class InternalSaver {
             .build();
 
     private static File getSaveFile() {
-        return new File(new File(FileUtils.getMinecraftDirectory(), Lithonate.MOD_ID), "internal.json");
+        return FabricLoader.getInstance().getConfigDir().resolve("internal.json").toFile();
     }
 
     public static void load() {

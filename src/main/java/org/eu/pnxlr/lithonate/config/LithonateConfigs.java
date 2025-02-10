@@ -32,6 +32,9 @@ public class LithonateConfigs {
     public static final LithonateConfigBooleanHotkeyed TWEAK_BIGGER_COCOA_BLOCK_HITBOXES = ConfigFactory.newConfigBooleanHotkeyed("tweakBiggerCocoaBlockHitboxes", true, "");
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
+    public static final LithonateConfigBooleanHotkeyed TWEAK_BIGGER_BANNER_SIGN_BLOCK_HITBOXES = ConfigFactory.newConfigBooleanHotkeyed("tweakBiggerBannerSignBlockHitboxes", true, "");
+
+    @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
     public static final LithonateConfigBooleanHotkeyed TWEAK_TRANSPARENT_BLOCK_CLICKS = ConfigFactory.newConfigBooleanHotkeyed("tweakTransparentBlockClicks", true, "");
 
     @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
@@ -43,6 +46,9 @@ public class LithonateConfigs {
     ////////////////////
     //    Disables    //
     ////////////////////
+
+    @Config(type = Config.Type.TWEAK, category = Config.Category.DISABLES)
+    public static final LithonateConfigBooleanHotkeyed YEET_NO_BLOCK_INTERACTIONS = ConfigFactory.newConfigBooleanHotkeyed("yeetNoBlockInteractions", true, "");
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.DISABLES)
     public static final LithonateConfigBooleanHotkeyed YEET_NO_BREAKING_NETHER_BRICKS_UNDER_WITHER_ROSES = ConfigFactory.newConfigBooleanHotkeyed("yeetNoBreakingNetherBricksUnderWitherRoses", true, "");

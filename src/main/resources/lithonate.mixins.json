@@ -15,8 +15,13 @@
     "core.gui.WidgetListConfigOptionsMixin",
     "core.gui.WidgetSearchBarAccessor",
     "tweaks.biggerCocoaBlockHitboxes.CocoaBlockMixin",
+    "tweaks.biggerBannerSignBlockHitboxes.AbstractSignBlockMixin",
+    "tweaks.biggerBannerSignBlockHitboxes.BannerBlockMixin",
+    "tweaks.biggerBannerSignBlockHitboxes.WallBannerBlockMixin",
+    "tweaks.biggerBannerSignBlockHitboxes.WallSignBlockMixin",
     "tweaks.transparentBlockClicks.ClientPlayerInteractionManagerMixin",
     "tweaks.transparentWitherRoseHitboxes.WitherRoseBlockMixin",
+    "yeets.noBlockInteractions.PlayerEntityMixin",
     "yeets.noBreakingNetherBricksUnderWitherRoses.ClientPlayerInteractionManagerMixin",
     "yeets.noClickingNetherPortalSides.ClientPlayerInteractionManagerMixin",
     "yeets.noClickingWitherRoses.ClientPlayerInteractionManagerMixin"

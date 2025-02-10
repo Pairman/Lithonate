@@ -48,7 +48,7 @@ public class LithonateConfigs {
     ////////////////////
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.DISABLES)
-    public static final LithonateConfigBooleanHotkeyed YEET_NO_BLOCK_INTERACTIONS = ConfigFactory.newConfigBooleanHotkeyed("yeetNoBlockInteractions", true, "");
+    public static final LithonateConfigBooleanHotkeyed YEET_NO_BLOCK_INTERACTIONS = ConfigFactory.newConfigBooleanHotkeyed("yeetNoBlockInteractions", false, "");
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.DISABLES)
     public static final LithonateConfigBooleanHotkeyed YEET_NO_BREAKING_NETHER_BRICKS_UNDER_WITHER_ROSES = ConfigFactory.newConfigBooleanHotkeyed("yeetNoBreakingNetherBricksUnderWitherRoses", true, "");

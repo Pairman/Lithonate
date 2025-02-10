@@ -23,7 +23,7 @@
   "// Disables": "================================================",
 
   "lithonate.config.yeetNoBlockInteractions": "noBlockInteractions",
-  "lithonate.config.yeetNoBlockInteractions.comment": "Disable all block interactions.",
+  "lithonate.config.yeetNoBlockInteractions.comment": "(Client-side only) Disable all block interactions.",
   "lithonate.config.yeetNoBlockInteractions.pretty_name": "No Block Interactions",
 
   "lithonate.config.yeetNoBreakingNetherBricksUnderWitherRoses": "noBreakingNetherBricksUnderWitherRoses",

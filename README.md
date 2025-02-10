@@ -34,7 +34,7 @@ Make hitboxes of wither roses empty.
 
 #### No Block Interactions
 
-Disable all block interactions.
+(Client-side only) Disable all block interactions.
 
 #### No Clicking Nether Portal Sides
 

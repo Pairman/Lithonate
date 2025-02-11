@@ -5,6 +5,9 @@
   "lithonate.config.tweakBetterBlockPlacementAgainstSigns.comment": "Place blocks directly on signs without interactions or holding shift.",
   "lithonate.config.tweakBetterBlockPlacementAgainstSigns.pretty_name": "Better Block Placement Against Signs",
 
+  "lithonate.config.tweakBetterDustsRailsPlacementOnTrapdoors": "betterDustsRailsPlacementOnTrapdoors",
+  "lithonate.config.tweakBetterDustsRailsPlacementOnTrapdoors.comment": "One-click close opened trapdoors and place redstone dusts, rails on them.",
+  "lithonate.config.tweakBetterDustsRailsPlacementOnTrapdoors.pretty_name": "Better Dusts & Rails Placement On Trapdoors",
 
   "lithonate.config.tweakBiggerCocoaBlockHitboxes": "biggerCocoaBlockHitboxes",
   "lithonate.config.tweakBiggerCocoaBlockHitboxes.comment": "Make hitboxes of cocoa blocks full-cuboidal.",
@@ -13,10 +16,6 @@
   "lithonate.config.tweakBiggerBannerSignBlockHitboxes": "biggerBannerSignBlockHitboxes",
   "lithonate.config.tweakBiggerBannerSignBlockHitboxes.comment": "Make hitboxes of banner, sign blocks full-cuboidal.",
   "lithonate.config.tweakBiggerBannerSignBlockHitboxes.pretty_name": "Bigger Banner & Sign Block Hitboxes",
-
-  "lithonate.config.tweakBetterDustsRailsPlacementOnTrapdoors": "betterDustsRailsPlacementOnTrapdoors",
-  "lithonate.config.tweakBetterDustsRailsPlacementOnTrapdoors.comment": "One-click close opened trapdoors and place redstone dusts, rails on them.",
-  "lithonate.config.tweakBetterDustsRailsPlacementOnTrapdoors.pretty_name": "Better Dusts & Rails Placement On Trapdoors",
 
   "lithonate.config.tweakTransparentBlockClicks": "transparentBlockClicks",
   "lithonate.config.tweakTransparentBlockClicks.comment": "Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.",

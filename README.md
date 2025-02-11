@@ -10,6 +10,14 @@ Tweaks to update your suppression.
 
 ### Features
 
+#### Better Block Placement Against Signs
+
+Place blocks directly on signs without interactions or holding shift.
+
+#### Better Dusts & Rails Placement On Trapdoors
+
+One-click close opened trapdoors and place redstone dusts, rails on them.
+
 #### Bigger Banner & Sign Block Hitboxes
 
 Make hitboxes of banner, sign blocks full-cuboidal.
@@ -31,10 +39,6 @@ Make banners, signs also transparent from clicks.
 Make hitboxes of wither roses empty.
 
 ### Disables
-
-#### No Block Interactions
-
-(Client-side only) Disable all block interactions.
 
 #### No Clicking Nether Portal Sides
 

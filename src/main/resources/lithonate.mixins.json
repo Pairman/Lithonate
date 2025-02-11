@@ -14,6 +14,9 @@
     "core.gui.WidgetListConfigOptionsAccessor",
     "core.gui.WidgetListConfigOptionsMixin",
     "core.gui.WidgetSearchBarAccessor",
+    "fakes.ClientPlayerInteractionManagerMixin",
+    "tweaks.betterBlockPlacementAgainstSigns.ClientPlayerInteractionManagerMixin",
+    "tweaks.betterDustsRailsPlacementOnTrapdoors.ClientPlayerInteractionManagerMixin",
     "tweaks.biggerCocoaBlockHitboxes.CocoaBlockMixin",
     "tweaks.biggerBannerSignBlockHitboxes.AbstractSignBlockMixin",
     "tweaks.biggerBannerSignBlockHitboxes.BannerBlockMixin",
@@ -21,7 +24,6 @@
     "tweaks.biggerBannerSignBlockHitboxes.WallSignBlockMixin",
     "tweaks.transparentBlockClicks.ClientPlayerInteractionManagerMixin",
     "tweaks.transparentWitherRoseHitboxes.WitherRoseBlockMixin",
-    "yeets.noBlockInteractions.PlayerEntityMixin",
     "yeets.noBreakingNetherBricksUnderWitherRoses.ClientPlayerInteractionManagerMixin",
     "yeets.noClickingNetherPortalSides.ClientPlayerInteractionManagerMixin",
     "yeets.noClickingWitherRoses.ClientPlayerInteractionManagerMixin"

@@ -67,7 +67,7 @@ public class ClientPlayerInteractionManagerMixin {
             !LithonateConfigs.YEET_NO_CLICKING_WITHER_ROSES.getBooleanValue())
             return;
         BlockPos blockPos = hitResult.getBlockPos();
-        Block block = this.client.world.getBlockState(blockPos).getBlock();
+        Block block = player.world.getBlockState(blockPos).getBlock();
         if (block instanceof WitherRoseBlock)
             cir.setReturnValue(ActionResult.FAIL);
     }

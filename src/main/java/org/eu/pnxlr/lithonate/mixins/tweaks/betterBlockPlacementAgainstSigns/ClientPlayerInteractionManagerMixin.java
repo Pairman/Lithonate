@@ -1,18 +1,21 @@
-package org.eu.pnxlr.lithonate.mixins.yeets.noClickingNetherPortalSides;
+package org.eu.pnxlr.lithonate.mixins.tweaks.betterBlockPlacementAgainstSigns;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.block.AbstractSignBlock;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.NetherPortalBlock;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.client.world.ClientWorld;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import org.eu.pnxlr.lithonate.config.LithonateConfigs;
+import org.eu.pnxlr.lithonate.fakes.IClientPlayerInteractionManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -29,14 +32,17 @@ public class ClientPlayerInteractionManagerMixin {
     private void onInteractBlock(ClientPlayerEntity player, ClientWorld world,
             Hand hand, BlockHitResult hitResult, CallbackInfoReturnable<ActionResult> cir) {
         if (!LithonateConfigs.SETTING_ENABLE.getBooleanValue() ||
-            !LithonateConfigs.YEET_NO_CLICKING_NETHER_PORTAL_SIDES.getBooleanValue())
+            !LithonateConfigs.TWEAK_BETTER_BLOCK_PLACEMENT_AGAINST_SIGNS.getBooleanValue())
             return;
         BlockPos blockPos = hitResult.getBlockPos();
         BlockState blockState = player.world.getBlockState(blockPos);
-        if (blockState.getBlock() instanceof NetherPortalBlock) {
-            Direction.Axis axis = blockState.get(NetherPortalBlock.AXIS);
-            Direction.Axis targetAxis = hitResult.getSide().getAxis();
-            if (targetAxis == axis || targetAxis == Direction.Axis.Y)
+        if (blockState.getBlock() instanceof AbstractSignBlock) {
+            Direction side = hitResult.getSide();
+            BlockPos blockPos2 = blockPos.offset(side);
+            BlockHitResult hitResult2 = new BlockHitResult(hitResult.getPos(), side, blockPos2, false);
+            if (player.world.getBlockState(blockPos2).canReplace(new ItemPlacementContext(new ItemUsageContext(player, hand, hitResult2))))
+                cir.setReturnValue(((IClientPlayerInteractionManager) this).interactBlockInternal(player, world, hand, hitResult2));
+            else
                 cir.setReturnValue(ActionResult.FAIL);
         }
     }

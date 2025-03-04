@@ -51,7 +51,7 @@
   "lithonate.config.settingOpenConfigGui.comment": "Open the config GUI of Lithonate",
 
   "lithonate.config.settingDebugMode": "debugMode",
-  "lithonate.config.settingDebugMode.comment": "Open the config GUI of Lithonate",
+  "lithonate.config.settingDebugMode.comment": "Enable debug mode.",
 
   "// GUI and Misc": "================================================",
 

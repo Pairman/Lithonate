@@ -29,6 +29,9 @@ public class LithonateConfigs {
     ////////////////////
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
+    public static final LithonateConfigBooleanHotkeyed TWEAK_AUTO_ANTI_GHOST_BLOCKS = ConfigFactory.newConfigBooleanHotkeyed("tweakAutoAntiGhostBlocks", false, "");
+
+    @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
     public static final LithonateConfigBooleanHotkeyed TWEAK_BETTER_BLOCK_PLACEMENT_AGAINST_SIGNS = ConfigFactory.newConfigBooleanHotkeyed("tweakBetterBlockPlacementAgainstSigns", false, "");
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
@@ -42,9 +45,10 @@ public class LithonateConfigs {
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
     public static final LithonateConfigBooleanHotkeyed TWEAK_TRANSPARENT_BLOCK_CLICKS = ConfigFactory.newConfigBooleanHotkeyed("tweakTransparentBlockClicks", true, "");
-
     @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
     public static final LithonateConfigBoolean TWEAK_TRANSPARENT_BLOCK_CLICKS_BANNER_SIGN = ConfigFactory.newConfigBoolean("tweakTransparentBlockClicksBannerSign", false);
+    @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
+    public static final LithonateConfigBoolean TWEAK_TRANSPARENT_BLOCK_CLICKS_NO_OPENING_TRAPDOORS = ConfigFactory.newConfigBoolean("tweakTransparentBlockClicksNoOpeningTrapdoors", true);
 
     @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
     public static final LithonateConfigBoolean TWEAK_TRANSPARENT_WITHER_ROSE_HITBOXES = ConfigFactory.newConfigBoolean("tweakTransparentWitherRoseHitboxes", false);

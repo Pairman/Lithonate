@@ -1,6 +1,10 @@
 {
   "// Features": "================================================",
 
+  "lithonate.config.tweakAutoAntiGhostBlocks": "autoAntiGhostBlocks",
+  "lithonate.config.tweakAutoAntiGhostBlocks.comment": "Automatically request resending of surrounding blocks when player places or breaks a block.",
+  "lithonate.config.tweakAutoAntiGhostBlocks.pretty_name": "Auto Anti Ghost Blocks",
+
   "lithonate.config.tweakBetterBlockPlacementAgainstSigns": "betterBlockPlacementAgainstSigns",
   "lithonate.config.tweakBetterBlockPlacementAgainstSigns.comment": "Place blocks directly on signs without interactions or holding shift.",
   "lithonate.config.tweakBetterBlockPlacementAgainstSigns.pretty_name": "Better Block Placement Against Signs",
@@ -21,8 +25,11 @@
   "lithonate.config.tweakTransparentBlockClicks.comment": "Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.",
   "lithonate.config.tweakTransparentBlockClicks.pretty_name": "Transparent Block Clicks",
   "lithonate.config.tweakTransparentBlockClicksBannerSign": "transparentBlockClicksBannerSign",
-  "lithonate.config.tweakTransparentBlockClicksBannerSign.comment": "Make banners, signs also transparent from clicks.",
+  "lithonate.config.tweakTransparentBlockClicksBannerSign.comment": "Make banners, signs also transparent from clicks when using `transparentBlockClicksBannerSign`.",
   "lithonate.config.tweakTransparentBlockClicksBannerSign.pretty_name": "Transparent Block Clicks for Banners & Signs",
+  "lithonate.config.tweakTransparentBlockClicksNoOpeningTrapdoors": "transparentBlockClicksNoOpeningTrapdoors",
+  "lithonate.config.tweakTransparentBlockClicksNoOpeningTrapdoors.comment": "Prevent accidentally opening trapdoors when holding redstone dusts, rails when using `transparentBlockClicksBannerSign`.",
+  "lithonate.config.tweakTransparentBlockClicksNoOpeningTrapdoors.pretty_name": "Transparent Block Clicks No Opening Trapdoors",
 
   "lithonate.config.tweakTransparentWitherRoseHitboxes": "transparentWitherRoseHitboxes",
   "lithonate.config.tweakTransparentWitherRoseHitboxes.comment": "Make hitboxes of wither roses empty.",

@@ -10,6 +10,10 @@ Tweaks to update your suppression.
 
 ### Features
 
+#### Auto Anti Ghost Blocks
+
+Automatically request resending of surrounding blocks when player places or breaks a block.
+
 #### Better Block Placement Against Signs
 
 Place blocks directly on signs without interactions or holding shift.
@@ -32,7 +36,11 @@ Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disab
 
 #### Transparent Block Clicks for Banners & Signs
 
-Make banners, signs also transparent from clicks.
+Make banners, signs also transparent from clicks when using `transparentBlockClicksBannerSign`.
+
+#### Transparent Block Clicks No Opening Trapdoors
+
+Prevent accidentally opening trapdoors when holding redstone dusts, rails when using `transparentBlockClicksBannerSign`.
 
 #### Transparent Wither Rose Hitboxes
 
@@ -54,5 +62,6 @@ Prevent breaking nether bricks with wither roses on them.
 
 ## Credits
 
-[Fallen-Breath/tweakermore](https://github.com/Fallen-Breath/tweakermore)
+[Fallen-Breath/tweakermore](https://github.com/Fallen-Breath/tweakermore) <br>
+[gbl/AntiGhost](https://github.com/gbl/AntiGhost) <br>
 [Ivan-1F/tweakerplus](https://github.com/Ivan-1F/tweakerplus)

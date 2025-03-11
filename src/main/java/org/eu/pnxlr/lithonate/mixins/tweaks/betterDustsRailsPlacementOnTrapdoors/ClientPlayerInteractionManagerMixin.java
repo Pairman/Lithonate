@@ -43,13 +43,18 @@ public class ClientPlayerInteractionManagerMixin {
         if (blockState.getBlock() instanceof TrapdoorBlock && blockState.get(TrapdoorBlock.HALF) == BlockHalf.TOP) {
             ItemStack itemStack = player.getStackInHand(hand);
             Item item = itemStack.getItem();
-            if (item == Items.REDSTONE || item == Items.ACTIVATOR_RAIL || item == Items.DETECTOR_RAIL || item == Items.POWERED_RAIL || item == Items.RAIL) {
+            if (item == Items.REDSTONE || item == Items.ACTIVATOR_RAIL || item == Items.DETECTOR_RAIL ||
+                item == Items.POWERED_RAIL || item == Items.RAIL) {
                 if (blockState.get(TrapdoorBlock.OPEN))
                     ((IClientPlayerInteractionManager) this).interactBlockInternal(player, world, hand, hitResult);
                 BlockPos blockPos2 = blockPos.up();
                 BlockHitResult hitResult2 = new BlockHitResult(hitResult.getPos(), Direction.UP, blockPos2, false);
-                if (player.world.getBlockState(blockPos2).canReplace(new ItemPlacementContext(new ItemUsageContext(player, hand, hitResult2))))
-                    cir.setReturnValue(((IClientPlayerInteractionManager) this).interactBlockInternal(player, world, hand, hitResult2));
+                if (player.world.getBlockState(blockPos2).canReplace(
+                            new ItemPlacementContext(new ItemUsageContext(player, hand, hitResult2))))
+                    cir.setReturnValue(((IClientPlayerInteractionManager) this).interactBlockInternal(
+                            player, world, hand, hitResult2));
+                else
+                    cir.setReturnValue(ActionResult.SUCCESS);
             }
         }
     }

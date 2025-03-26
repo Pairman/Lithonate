@@ -45,6 +45,10 @@ public class LithonateConfigs {
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
     public static final LithonateConfigBooleanHotkeyed TWEAK_HIGHLIGHT_BLOCK_OUTLINES = ConfigFactory.newConfigBooleanHotkeyed("tweakHighlightBlockOutlines", true, "");
+    @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
+    public static final LithonateConfigBooleanHotkeyed TWEAK_HIGHLIGHT_BLOCK_OUTLINES_THROUGH = ConfigFactory.newConfigBooleanHotkeyed("tweakHighlightBlockOutlinesThrough", false, "");
+    @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
+    public static final LithonateConfigInteger TWEAK_HIGHLIGHT_BLOCK_OUTLINES_WIDTH = ConfigFactory.newConfigInteger("tweakHighlightBlockOutlinesWidth", 4, 1, 20);
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
     public static final LithonateConfigBooleanHotkeyed TWEAK_TRANSPARENT_BLOCK_CLICKS = ConfigFactory.newConfigBooleanHotkeyed("tweakTransparentBlockClicks", true, "");

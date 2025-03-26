@@ -32,7 +32,15 @@ Make hitboxes of cocoa blocks full-cuboidal.
 
 #### Highlight Block Outlines
 
-Render block outline thicker and color-inverted.
+Render block outlinez thicker with color inversion.
+
+#### Highlight Block Outlines Show Through
+
+Whether to show outlines through blocks for `transparentBlockClicksBannerSign`.
+
+#### Highlight Block Outlines Width
+
+Customize line width for `transparentBlockClicksBannerSign`.
 
 #### Transparent Block Clicks
 

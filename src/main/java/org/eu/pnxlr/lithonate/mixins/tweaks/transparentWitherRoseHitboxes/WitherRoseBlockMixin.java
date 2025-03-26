@@ -14,11 +14,13 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import org.eu.pnxlr.lithonate.config.LithonateConfigs;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 
 @Environment(EnvType.CLIENT)
 @Mixin(WitherRoseBlock.class)
 public class WitherRoseBlockMixin extends FlowerBlock {
 
+    @Unique
     private static final VoxelShape CUBOID_EMPTY = Block.createCuboidShape(0, 0, 0, 0.001, 0.001, 0.001);
 
     public WitherRoseBlockMixin(StatusEffect effect, int effectDuration, AbstractBlock.Settings settings) {

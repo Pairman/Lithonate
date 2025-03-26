@@ -32,7 +32,7 @@ Make hitboxes of cocoa blocks full-cuboidal.
 
 #### Highlight Block Outlines
 
-Render block outlinez thicker with color inversion.
+Render block outlines thicker with color inversion.
 
 #### Highlight Block Outlines Show Through
 

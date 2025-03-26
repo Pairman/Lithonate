@@ -25,10 +25,10 @@
   "lithonate.config.tweakHighlightBlockOutlines.comment": "Render block outlines thicker with color inversion.",
   "lithonate.config.tweakHighlightBlockOutlines.pretty_name": "Highlight Block Outlines",
   "lithonate.config.tweakHighlightBlockOutlinesThrough": "highlightBlockOutlinesThrough",
-  "lithonate.config.tweakHighlightBlockOutlinesThrough.comment": "Whether to show outlines through blocks for `transparentBlockClicksBannerSign`.",
+  "lithonate.config.tweakHighlightBlockOutlinesThrough.comment": "Whether to show outlines through blocks for `tweakHighlightBlockOutlines`.",
   "lithonate.config.tweakHighlightBlockOutlinesThrough.pretty_name": "Highlight Block Outlines Show Through",
   "lithonate.config.tweakHighlightBlockOutlinesWidth": "highlightBlockOutlinesWidth",
-  "lithonate.config.tweakHighlightBlockOutlinesWidth.comment": "Customize line width for `transparentBlockClicksBannerSign`.",
+  "lithonate.config.tweakHighlightBlockOutlinesWidth.comment": "Customize line width for `tweakHighlightBlockOutlines`.",
   "lithonate.config.tweakHighlightBlockOutlinesWidth.pretty_name": "Highlight Block Outlines Width",
 
   "lithonate.config.tweakTransparentBlockClicks": "transparentBlockClicks",

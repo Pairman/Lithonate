@@ -36,11 +36,11 @@ Render block outlines thicker with color inversion.
 
 #### Highlight Block Outlines Show Through
 
-Whether to show outlines through blocks for `transparentBlockClicksBannerSign`.
+Whether to show outlines through blocks for `tweakHighlightBlockOutlines`.
 
 #### Highlight Block Outlines Width
 
-Customize line width for `transparentBlockClicksBannerSign`.
+Customize line width for `tweakHighlightBlockOutlines`.
 
 #### Transparent Block Clicks
 

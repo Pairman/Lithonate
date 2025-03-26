@@ -23,6 +23,7 @@
     "tweaks.biggerBannerSignBlockHitboxes.BannerBlockMixin",
     "tweaks.biggerBannerSignBlockHitboxes.WallBannerBlockMixin",
     "tweaks.biggerBannerSignBlockHitboxes.WallSignBlockMixin",
+    "tweaks.highlightBlockOutlines.WorldRendererMixin",
     "tweaks.transparentBlockClicks.ClientPlayerInteractionManagerMixin",
     "tweaks.transparentWitherRoseHitboxes.WitherRoseBlockMixin",
     "yeets.noBreakingNetherBricksUnderWitherRoses.ClientPlayerInteractionManagerMixin",

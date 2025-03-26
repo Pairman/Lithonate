@@ -30,6 +30,10 @@ Make hitboxes of banner, sign blocks full-cuboidal.
 
 Make hitboxes of cocoa blocks full-cuboidal.
 
+#### Highlight Block Outlines
+
+Render block outline thicker and color-inverted.
+
 #### Transparent Block Clicks
 
 Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.
@@ -62,6 +66,8 @@ Prevent breaking nether bricks with wither roses on them.
 
 ## Credits
 
+[shedaniel/CustomSelectionBox-New](https://github.com/shedaniel/CustomSelectionBox-New) <br>
+[DarkKronicle/BetterBlockOutline](https://github.com/DarkKronicle/BetterBlockOutline) <br>
 [Fallen-Breath/tweakermore](https://github.com/Fallen-Breath/tweakermore) <br>
 [gbl/AntiGhost](https://github.com/gbl/AntiGhost) <br>
-[Ivan-1F/tweakerplus](https://github.com/Ivan-1F/tweakerplus)
+[Ivan-1F/tweakerplus](https://github.com/Ivan-1F/tweakerplus) <br>

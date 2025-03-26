@@ -21,6 +21,10 @@
   "lithonate.config.tweakBiggerBannerSignBlockHitboxes.comment": "Make hitboxes of banner, sign blocks full-cuboidal.",
   "lithonate.config.tweakBiggerBannerSignBlockHitboxes.pretty_name": "Bigger Banner & Sign Block Hitboxes",
 
+  "lithonate.config.tweakHighlightBlockOutlines": "highlightBlockOutlines",
+  "lithonate.config.tweakHighlightBlockOutlines.comment": "Render block outline thicker and color-inverted.",
+  "lithonate.config.tweakHighlightBlockOutlines.pretty_name": "Highlight Block Outlines",
+
   "lithonate.config.tweakTransparentBlockClicks": "transparentBlockClicks",
   "lithonate.config.tweakTransparentBlockClicks.comment": "Make rails, redstone dusts, carpets transparent from clicks. Hold shift to disable this temporarily.",
   "lithonate.config.tweakTransparentBlockClicks.pretty_name": "Transparent Block Clicks",

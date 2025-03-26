@@ -44,6 +44,9 @@ public class LithonateConfigs {
     public static final LithonateConfigBooleanHotkeyed TWEAK_BIGGER_BANNER_SIGN_BLOCK_HITBOXES = ConfigFactory.newConfigBooleanHotkeyed("tweakBiggerBannerSignBlockHitboxes", true, "");
 
     @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
+    public static final LithonateConfigBooleanHotkeyed TWEAK_HIGHLIGHT_BLOCK_OUTLINES = ConfigFactory.newConfigBooleanHotkeyed("tweakHighlightBlockOutlines", true, "");
+
+    @Config(type = Config.Type.TWEAK, category = Config.Category.FEATURES)
     public static final LithonateConfigBooleanHotkeyed TWEAK_TRANSPARENT_BLOCK_CLICKS = ConfigFactory.newConfigBooleanHotkeyed("tweakTransparentBlockClicks", true, "");
     @Config(type = Config.Type.GENERIC, category = Config.Category.FEATURES)
     public static final LithonateConfigBoolean TWEAK_TRANSPARENT_BLOCK_CLICKS_BANNER_SIGN = ConfigFactory.newConfigBoolean("tweakTransparentBlockClicksBannerSign", false);

@@ -107,8 +107,8 @@ public class WorldRendererMixin {
         RenderSystem.lineWidth(LithonateConfigs.TWEAK_HIGHLIGHT_BLOCK_OUTLINES_WIDTH.getIntegerValue());
         buffer.begin(GL11.GL_LINES, VertexFormats.POSITION);
         shape.forEachEdge((x1, y1, z1, x2, y2, z2) -> {
-            buffer.vertex((float) (x1 + dx), (float)(y1 + dy), (float)(z1 + dz)).next();
-            buffer.vertex((float) (x2 + dx), (float)(y2 + dy), (float)(z2 + dz)).next();
+            buffer.vertex((float) (x1 + dx), (float) (y1 + dy), (float) (z1 + dz)).next();
+            buffer.vertex((float) (x2 + dx), (float) (y2 + dy), (float) (z2 + dz)).next();
         });
         tessellator.draw();
         RenderSystem.depthMask(true);

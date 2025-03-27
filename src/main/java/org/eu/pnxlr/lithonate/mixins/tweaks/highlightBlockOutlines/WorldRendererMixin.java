@@ -101,10 +101,14 @@ public class WorldRendererMixin {
                 GlStateManager.DstFactor.ZERO);
         RenderSystem.disableTexture();
         RenderSystem.disableCull();
-        if (LithonateConfigs.TWEAK_HIGHLIGHT_BLOCK_OUTLINES_THROUGH.getBooleanValue())
+        int width = LithonateConfigs.TWEAK_HIGHLIGHT_BLOCK_OUTLINES_WIDTH.getIntegerValue();
+        boolean is_thru = LithonateConfigs.TWEAK_HIGHLIGHT_BLOCK_OUTLINES_THROUGH.getBooleanValue();
+        if (is_thru) {
+            width /= 2;
             RenderSystem.disableDepthTest();
+        }
         RenderSystem.depthMask(false);
-        RenderSystem.lineWidth(LithonateConfigs.TWEAK_HIGHLIGHT_BLOCK_OUTLINES_WIDTH.getIntegerValue());
+        RenderSystem.lineWidth(width);
         buffer.begin(GL11.GL_LINES, VertexFormats.POSITION);
         shape.forEachEdge((x1, y1, z1, x2, y2, z2) -> {
             buffer.vertex((float) (x1 + dx), (float) (y1 + dy), (float) (z1 + dz)).next();
@@ -112,7 +116,8 @@ public class WorldRendererMixin {
         });
         tessellator.draw();
         RenderSystem.depthMask(true);
-        RenderSystem.enableDepthTest();
+        if (is_thru)
+            RenderSystem.enableDepthTest();
         RenderSystem.enableCull();
         RenderSystem.enableTexture();
         RenderSystem.disableBlend();
